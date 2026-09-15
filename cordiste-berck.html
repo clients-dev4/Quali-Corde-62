@@ -44,7 +44,7 @@
             <div class="image-container"><img src="logo.webp" alt="entreprise Cordiste Berck"></div>
             <form id="contactForm" action="https://webprime.app/webhook/contact/a0dbffb8afffbd140c7c09cb7d2c09e30a8e36bb44f78f4fcd0f5e49af523630" method="POST" onsubmit="return sendBoth(event)">
                 <div class="hp-wrap"><label for="website">Votre site web :</label><input type="text" id="website" name="_honey" autocomplete="off"></div>
-                <label for="name">Nom :</label><input type="text" id="name" name="nom" required>
+                <label for="name">Nom :</label><input type="text" id="name" name="nom" required pattern="[A-Za-zÀ-ÿ' -]{2,60}" title="Indiquez votre nom (lettres uniquement, 2 a 60 caracteres)">
                 <label for="tel">Telephone :</label><input type="tel" id="tel" name="tel" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
                 <label for="email">Email :</label><input type="email" id="email" name="email" required>
                 <label for="services">Services :</label>
